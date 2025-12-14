@@ -1,1 +1,1 @@
-select * from raw_layer.raw.customers
+select customer_name from raw_layer.raw.customers
