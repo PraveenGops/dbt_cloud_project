@@ -1,1 +1,1 @@
-select customer_name from raw_layer.raw.customers
+select * from PAY_DB.MONTHLY_PAY.MONTHLY_PAY_RECORDS
