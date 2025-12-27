@@ -2,7 +2,7 @@
     {% set result_count %}
         select count(*)
         from {{ table_name }}
-        where right(year,4) = {{ year }}
+        where right(year,4) = '{{ year }}'
     {% endset %}
 
 
