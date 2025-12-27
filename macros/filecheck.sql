@@ -6,6 +6,6 @@
     {% endset %}
 
 {% set result = run_query(query) %}
-{% do log(result, info=True) %}
+{% return(result) %}
 
 {% endmacro %}
