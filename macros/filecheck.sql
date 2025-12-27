@@ -5,5 +5,7 @@
         where right(year,4) = '{{ year }}'
     {% endset %}
 
+{% set result = run_query(query) %}
+{% do log(result, info=True) %}
 
 {% endmacro %}
