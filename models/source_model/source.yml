@@ -1,0 +1,9 @@
+sources:
+  - name: src_from_dl2 # this is the source_name
+    database: DL2_DB
+    schema: DL2_SCHEMA
+
+    tables:
+      - name: DL2_EMPLOYEE_RAW # this is the table_name
+      - name: DL2_EMPLOYEE_PROJECT_AD 
+      - name: DL2_EMPLOYEE_EXIT  
