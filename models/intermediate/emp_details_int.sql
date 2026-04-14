@@ -1,5 +1,3 @@
-{{ config(materialized = 'table')}}
-
 select *,
     case
       when TERMINATION_DATE is null then 'Y'

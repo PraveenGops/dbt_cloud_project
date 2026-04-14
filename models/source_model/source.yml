@@ -1,6 +1,11 @@
 sources:
   - name: src_from_dl2 # this is the source_name
-    database: DL2_DB
+    database: |
+      {%- if target.name == "test" -%} DL2_DB_test
+      {%- elif target.name == "dev" -%} DL2_DB_dev
+      {%- elif target.name == "accp" -%} DL2_DB_accp
+      {%- elif target.name == "DEFAULT" -%} DL2_DB
+      {%- endif -%}
     schema: DL2_SCHEMA
 
     tables:

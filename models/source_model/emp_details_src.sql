@@ -1,5 +1,3 @@
-{{ config(materialized = 'table')}}
-
 select 
      replace(source_data:employee_id,'"') as employee_id
     ,replace(source_data:first_name,'"') as first_name
