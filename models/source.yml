@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: src_data
+    description: 'this is the source declaration for pratice_db'
+    database: PRACTICE_DB
+    schema: RAW
+    tables:
+     - name:  raw_customers
+     - name: raw_sales

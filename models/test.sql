@@ -1,0 +1,1 @@
+select * from {{ source('src_data','raw_sales')}}
